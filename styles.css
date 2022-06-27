@@ -30,7 +30,7 @@ h3 {
 }
 .container {
    display: block;
-   margin: 100px auto;
+   margin: 100px auto 30px auto;
    width: 40%;
 }
 .input,
@@ -83,4 +83,13 @@ div.vertical {
    font-size: 15px;
    font-weight: bold;
    margin: 0;
+}
+
+footer {
+   text-align: center;
+   font-size: 14px;
+}
+.brandLink, .footLink {
+   color: #507dbc;
+   text-decoration: none;
 }
