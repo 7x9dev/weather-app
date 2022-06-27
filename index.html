@@ -33,32 +33,32 @@
                placeholder="Enter your city"
                id="search-input"
             />
-            <button
-               class="btn btn-primary me-3"
-               type="submit"
-               id="search-button"
-            >
+            <button class="btn btn-primary me-3" type="submit">
                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+               class="btn btn-outline-secondary"
+               type="button"
+               id="current-city"
+            >
                Current city
             </button>
          </form>
          <div class="city">
-            <h2 id="city">New york</h2>
+            <h2 id="city"></h2>
             <p id="date">Friday 14:02</p>
-            <p>Sunny</p>
+            <p id="weather-descr"></p>
          </div>
          <div class="weather-current">
             <img class="weather-icon" src="icons/cloud-sun.svg" alt="weather" />
             <div class="degree">
-               <h1>21</h1>
+               <h1 id="degree"></h1>
                <p class="temp-unit">°C</p>
             </div>
             <div class="vertical"></div>
             <div class="weather-details">
-               <p>Precipitation: 20%</p>
-               <p>Wind: 6km/h</p>
+               <p>Humidity: <span id="humidity"></span>%</p>
+               <p>Wind: <span id="wind"></span>km/h</p>
             </div>
          </div>
          <div class="row row-cols-3 row-cols-lg-6">
