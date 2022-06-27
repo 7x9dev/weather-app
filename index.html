@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <script
+         src="https://kit.fontawesome.com/63d05c05ac.js"
+         crossorigin="anonymous"
+      ></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   </head>
+   <body>
+      <div class="container p-5 shadow p-3 bg-body rounded-4">
+         <form class="input-group" id="search-form">
+            <input
+               type="text"
+               class="form-control input"
+               placeholder="Enter your city"
+               id="search-input"
+            />
+            <button
+               class="btn btn-primary me-3"
+               type="submit"
+               id="search-button"
+            >
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+               Current city
+            </button>
+         </form>
+         <div class="city">
+            <h2 id="city">New york</h2>
+            <p id="date">Friday 14:02</p>
+            <p>Sunny</p>
+         </div>
+         <div class="weather-current">
+            <img class="weather-icon" src="icons/cloud-sun.svg" alt="weather" />
+            <div class="degree">
+               <h1>21</h1>
+               <p class="temp-unit">°C</p>
+            </div>
+            <div class="vertical"></div>
+            <div class="weather-details">
+               <p>Precipitation: 20%</p>
+               <p>Wind: 6km/h</p>
+            </div>
+         </div>
+         <div class="row row-cols-3 row-cols-lg-6">
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>sat</h3>
+               <img class="weather-icon-next" src="icons/rain.svg" alt="rain" />
+               <p class="degree-next">17°C</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>sun</h3>
+               <img
+                  class="weather-icon-next"
+                  src="icons/storm.svg"
+                  alt="storm"
+               />
+               <p class="degree-next">15°C</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>mon</h3>
+               <img
+                  class="weather-icon-next"
+                  src="icons/cloudy.svg"
+                  alt="cloudy"
+               />
+               <p class="degree-next">18°C</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>tue</h3>
+               <img
+                  class="weather-icon-next"
+                  src="icons/windy.svg"
+                  alt="windy"
+               />
+               <p class="degree-next">17°C</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>wed</h3>
+               <img
+                  class="weather-icon-next"
+                  src="icons/cloud-sun.svg"
+                  alt="sunny"
+               />
+               <p class="degree-next">19°C</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center mb-4">
+               <h3>thu</h3>
+               <img
+                  class="weather-icon-next"
+                  src="icons/windy.svg"
+                  alt="windy"
+               />
+               <p class="degree-next">18°C</p>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
