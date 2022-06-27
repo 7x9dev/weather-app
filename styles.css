@@ -1,3 +1,11 @@
+body {
+   background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+   background-size: cover;
+   height: 100vh;
+   font-family: "Heebo", sans-serif;
+   font-weight: 400;
+   font-size: 17px;
+}
 h1,
 h2,
 h3 {
@@ -20,16 +28,10 @@ h3 {
    text-transform: capitalize;
    margin: 0;
 }
-body {
-   background-color: #eaf1f3;
-   font-family: "Heebo", sans-serif;
-   font-weight: 400;
-   font-size: 17px;
-}
 .container {
    display: block;
    margin: 100px auto;
-   width: 35%;
+   width: 40%;
 }
 .input,
 .btn {
