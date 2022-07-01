@@ -11,7 +11,7 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="src/styles.css" />
       <script
          src="https://kit.fontawesome.com/63d05c05ac.js"
          crossorigin="anonymous"
@@ -19,7 +19,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
-         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap"
          rel="stylesheet"
       />
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -50,7 +50,7 @@
             <p id="weather-descr"></p>
          </div>
          <div class="weather-current">
-            <img class="weather-icon" src="icons/cloud-sun.svg" alt="weather" />
+            <img class="weather-icon" src="icons/sun.svg" alt="weather" />
             <div class="degree">
                <h1 id="degree"></h1>
                <p class="temp-unit">°C</p>
@@ -62,12 +62,12 @@
             </div>
          </div>
          <div class="row row-cols-3 row-cols-lg-6">
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>sat</h3>
                <img class="weather-icon-next" src="icons/rain.svg" alt="rain" />
                <p class="degree-next">17°C</p>
             </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>sun</h3>
                <img
                   class="weather-icon-next"
@@ -76,7 +76,7 @@
                />
                <p class="degree-next">15°C</p>
             </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>mon</h3>
                <img
                   class="weather-icon-next"
@@ -85,7 +85,7 @@
                />
                <p class="degree-next">18°C</p>
             </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>tue</h3>
                <img
                   class="weather-icon-next"
@@ -94,16 +94,12 @@
                />
                <p class="degree-next">17°C</p>
             </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>wed</h3>
-               <img
-                  class="weather-icon-next"
-                  src="icons/cloud-sun.svg"
-                  alt="sunny"
-               />
+               <img class="weather-icon-next" src="icons/sun.svg" alt="sunny" />
                <p class="degree-next">19°C</p>
             </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
+            <div class="col d-flex flex-column align-items-center mb-0">
                <h3>thu</h3>
                <img
                   class="weather-icon-next"
@@ -115,8 +111,27 @@
          </div>
       </div>
       <footer>
-         <p>© 2022 <a class="footLink" href="https://www.7x9.dev/" target="_blank">7x9.dev</a> | Coded and designed by <a class="footLink" href="https://www.linkedin.com/in/valerie-d-354909204/" target="_blank">Valerie&nbsp;D.</a> and is open-souced on <a class="footLink" href="https://github.com/7x9dev/weather-app" target="_blank">GitHub</a></p>
+         <p>
+            © 2022
+            <a class="footLink" href="https://www.7x9.dev/" target="_blank"
+               >7x9.dev</a
+            >
+            | Coded and designed by
+            <a
+               class="footLink"
+               href="https://www.linkedin.com/in/valerie-d-354909204/"
+               target="_blank"
+               >Valerie&nbsp;D.</a
+            >
+            and is open-souced on
+            <a
+               class="footLink"
+               href="https://github.com/7x9dev/weather-app"
+               target="_blank"
+               >GitHub</a
+            >
+         </p>
       </footer>
-      <script src="script.js"></script>
+      <script src="src/script.js"></script>
    </body>
 </html>

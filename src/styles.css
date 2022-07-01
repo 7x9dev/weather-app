@@ -1,16 +1,20 @@
 body {
-   background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+   background: linear-gradient(
+      360deg,
+      rgb(17, 23, 58) 0%,
+      rgb(58, 85, 148) 90%
+   );
    background-size: cover;
    height: 100vh;
    font-family: "Heebo", sans-serif;
    font-weight: 400;
    font-size: 17px;
+   color: #fff;
 }
 h1,
 h2,
 h3 {
-   color: #04080f;
-   font-weight: 700;
+   font-weight: 500;
 }
 .temp-unit {
    margin: 0;
@@ -24,15 +28,20 @@ h2 {
    text-transform: capitalize;
 }
 h3 {
-   font-size: 18px;
+   font-size: 20px;
    text-transform: capitalize;
    margin: 0;
 }
 .container {
    display: block;
    margin: 100px auto 30px auto;
-   width: 40%;
+   width: 35%;
+   background-image: url("../images/bg.jpg");
+   height: auto;
+   background-size: cover;
+   background-position: center;
 }
+
 .input,
 .btn {
    border-radius: 0;
@@ -43,6 +52,15 @@ h3 {
 }
 .btn-primary:hover {
    background-color: #507dbc;
+}
+.btn-outline-secondary {
+   border-color: #fff;
+   color: #fff;
+}
+.btn-outline-secondary:hover {
+   border-color: #fff;
+   background-color: #fff;
+   color: rgb(44, 44, 44);
 }
 .weather-current {
    display: flex;
@@ -72,24 +90,25 @@ div.vertical {
 }
 .weather-details p {
    margin: 4px 0;
-   font-size: 15px;
-   color: #696969;
+   font-size: 16px;
 }
 .weather-icon-next {
    width: 50px;
    margin: 10px 0;
 }
 .degree-next {
-   font-size: 15px;
-   font-weight: bold;
+   font-size: 18px;
    margin: 0;
 }
 
 footer {
    text-align: center;
-   font-size: 14px;
+   font-size: 13px;
 }
 .footLink {
-   color: #507dbc;
+   color: #85b8ff;
    text-decoration: none;
+}
+.footLink:hover {
+   color: #38f4c9;
 }
