@@ -1,4 +1,4 @@
-//date
+//current date
 let today = new Date();
 let currentDate = document.querySelector("#date");
 let days = [
@@ -21,7 +21,7 @@ if (min < 10) {
 let day = days[today.getDay()];
 date.innerHTML = `${day} ${hr}:${min}`;
 
-//city
+//weather data
 function showWeather(response) {
    document.querySelector("#city").innerHTML = response.data.name;
    document.querySelector("#degree").innerHTML = Math.round(
@@ -33,8 +33,12 @@ function showWeather(response) {
    );
    document.querySelector("#weather-descr").innerHTML =
       response.data.weather[0].main;
+   document
+      .querySelector(".weather-icon")
+      .setAttribute("src", `icons/${response.data.weather[0].icon}@2x.svg`);
 }
 
+//search
 function searchCity(city) {
    let apiKey = "5166d6bfe55bc81ec2d7bb78b538650f";
    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;

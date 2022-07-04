@@ -30,7 +30,7 @@
             <input
                type="text"
                class="form-control input"
-               placeholder="Enter your city"
+               placeholder="Search for a city..."
                id="search-input"
             />
             <button class="btn btn-primary me-3" type="submit">
@@ -46,67 +46,22 @@
          </form>
          <div class="city">
             <h2 id="city"></h2>
-            <p id="date">Friday 14:02</p>
+            <p id="date"></p>
             <p id="weather-descr"></p>
          </div>
          <div class="weather-current">
-            <img class="weather-icon" src="icons/sun.svg" alt="weather" />
-            <div class="degree">
-               <h1 id="degree"></h1>
-               <p class="temp-unit">°C</p>
+            <div class="temp-current">
+               <img class="weather-icon" src="" alt="" />
+               <div class="degree">
+                  <h1 id="degree"></h1>
+                  <p class="temp-unit-celsius">°C</p>
+                  <div class="vertical-line"></div>
+                  <p class="temp-unit-fahrenheit">°F</p>
+               </div>
             </div>
-            <div class="vertical"></div>
             <div class="weather-details">
                <p>Humidity: <span id="humidity"></span>%</p>
                <p>Wind: <span id="wind"></span>km/h</p>
-            </div>
-         </div>
-         <div class="row row-cols-3 row-cols-lg-6">
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>sat</h3>
-               <img class="weather-icon-next" src="icons/rain.svg" alt="rain" />
-               <p class="degree-next">17°C</p>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>sun</h3>
-               <img
-                  class="weather-icon-next"
-                  src="icons/storm.svg"
-                  alt="storm"
-               />
-               <p class="degree-next">15°C</p>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>mon</h3>
-               <img
-                  class="weather-icon-next"
-                  src="icons/cloudy.svg"
-                  alt="cloudy"
-               />
-               <p class="degree-next">18°C</p>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>tue</h3>
-               <img
-                  class="weather-icon-next"
-                  src="icons/windy.svg"
-                  alt="windy"
-               />
-               <p class="degree-next">17°C</p>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>wed</h3>
-               <img class="weather-icon-next" src="icons/sun.svg" alt="sunny" />
-               <p class="degree-next">19°C</p>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-0">
-               <h3>thu</h3>
-               <img
-                  class="weather-icon-next"
-                  src="icons/windy.svg"
-                  alt="windy"
-               />
-               <p class="degree-next">18°C</p>
             </div>
          </div>
       </div>
