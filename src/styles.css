@@ -80,10 +80,23 @@ h3 {
 .degree {
    display: flex;
 }
-.temp-unit-celsius,
-.temp-unit-fahrenheit {
+.temp-unit, .active {
    font-size: 20px;
    margin: 4px 0 0 3px;
+   text-decoration: none;
+}
+.temp-unit {
+   color: #85b8ff;
+}
+.temp-unit:hover {
+   color: #38f4c9;
+}
+.active {
+   cursor: default;
+   color: #fff;
+}
+.active:hover {
+   color: #fff;
 }
 div.vertical-line {
    height: 16px;
