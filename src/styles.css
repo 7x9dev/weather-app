@@ -32,7 +32,7 @@ h3 {
 }
 .container {
    display: block;
-   margin: 100px auto 30px auto;
+   margin: 100px auto 25px auto;
    max-width: 35%;
    background-image: url("../images/bg.jpg");
    height: auto;
