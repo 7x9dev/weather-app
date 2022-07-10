@@ -21,7 +21,7 @@ if (min < 10) {
 let day = days[today.getDay()];
 date.innerHTML = `${day} ${hr}:${min}`;
 
-//
+//week days
 function formatDay(timestamp) {
    let date = new Date(timestamp * 1000);
    let day = date.getDay();
@@ -41,7 +41,7 @@ function displayForecast(response) {
          forecastHTML =
             forecastHTML +
             `
-         <div class="col d-flex flex-column align-items-center week-day">
+         <div class="col d-flex flex-column align-items-center">
             <h3>${formatDay(forecastDay.dt)}</h3>
             <img
                class="weather-icon-next"
@@ -115,33 +115,5 @@ function getLocation(event) {
 }
 let locationButton = document.querySelector("#current-city");
 locationButton.addEventListener("click", getLocation);
-
-//unit conversion
-function showFahrTemperature(event) {
-   event.preventDefault();
-   let tempUnit = document.querySelector("#degree");
-   //remove the active class
-   celsUnit.classList.remove("active");
-   //add the active class
-   fahrUnit.classList.add("active");
-   let fahrTemperature = (celsTemperature * 9) / 5 + 32;
-   tempUnit.innerHTML = Math.round(fahrTemperature);
-}
-
-function showCelsTemperature(event) {
-   event.preventDefault();
-   celsUnit.classList.add("active");
-   fahrUnit.classList.remove("active");
-   let tempUnit = document.querySelector("#degree");
-   tempUnit.innerHTML = Math.round(celsTemperature);
-}
-
-let fahrUnit = document.querySelector("#fahr-unit");
-fahrUnit.addEventListener("click", showFahrTemperature);
-
-let celsUnit = document.querySelector("#cels-unit");
-celsUnit.addEventListener("click", showCelsTemperature);
-
-let celsTemperature = null;
 
 searchCity("New York");

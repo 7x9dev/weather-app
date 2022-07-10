@@ -63,7 +63,7 @@ h3 {
 .weather-current {
    display: flex;
    align-items: center;
-   gap: 60px;
+   margin-bottom: 35px;
 }
 .temp-current {
    display: flex;
@@ -80,38 +80,19 @@ h3 {
 .degree {
    display: flex;
 }
-.temp-unit,
-.active {
+.temp-unit {
    font-size: 20px;
    margin: 4px 0 0 3px;
    text-decoration: none;
 }
-.temp-unit {
-   color: #85b8ff;
-}
-.temp-unit:hover {
-   color: #38f4c9;
-}
-.active {
-   cursor: default;
-   color: #fff;
-}
-.active:hover {
-   color: #fff;
-}
 div.vertical-line {
-   height: 16px;
+   height: 48px;
    border-left: 1px solid #d3d3d3;
-   margin: 10px 5px 0 10px;
+   margin: 0px 25px;
 }
 .weather-details p {
    margin: 4px 0;
    font-size: 16px;
-}
-.divider {
-   margin: 35px 0 30px 0;
-   color: #fff;
-   opacity: 0.5;
 }
 .weather-icon-next {
    width: 45px;
